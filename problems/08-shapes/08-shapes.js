@@ -20,6 +20,22 @@ Example for printShape("Diamond", 5, "*");
  ***
   * 
 */
+
+
+
+// TRIANGLE 
 function printShape(shape, height, character) {
-  
+
+  //this is for height
+  for(let i=0; i < height; i++){
+    let row =''
+
+     for(let j=0; j< i+i; j++){
+       row += character
+     }
+    
+     console.log(row);
+  }
 }
+
+printShape("Triangle", 3, "$");
